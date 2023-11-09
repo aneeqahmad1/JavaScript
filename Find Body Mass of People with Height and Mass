@@ -1,0 +1,33 @@
+var john = {
+    fullName : 'john Doe',
+    mass : 72.5,
+    height : 1.65,
+    BMI : function(){
+        return this.mass / (this.height * this.height);
+    }
+  
+}
+
+var bmiJohn = john.BMI();
+
+var mike = {
+    fullName : 'Mike Alex ',
+    mass : 72.5,
+    height : 1.65,
+    BMI : function(){
+        return this.mass / (this.height * this.height);
+}
+}
+var bmiMike = mike.BMI();
+console.log(bmiMike);
+
+if(bmiJohn > bmiMike){
+    console.log('BMI of John is greater than BMI of Mike');
+}
+else if(bmiJohn < bmiMike){
+    console.log('BMI of Mike is greater than BMI of John');
+ 
+}
+else{
+    console.log('BMi of both is same')
+}
