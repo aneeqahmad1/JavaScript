@@ -1,0 +1,26 @@
+function tipCalculator(bills){
+    if(bills < 50){
+        percentage = 0.2;
+    }
+    else if(bills > 50 && bills < 200){
+        percentage = 0.15;
+    }
+    else{
+        percentage = 0.1;
+    }
+    return percentage * bills;
+}
+
+console.log(tipCalculator(100));
+
+bill = [124,48,256];
+
+tip = [tipCalculator(bill[0]),
+tipCalculator(bill[1]),
+tipCalculator(bill[2])
+];
+totalBill = [tip[0] + bill[0],
+tip[1] + bill[1],
+tip[2] + bill[2],
+];
+console.log(totalBill);
