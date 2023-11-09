@@ -1,0 +1,25 @@
+var mike1,mike2,mike3, john1,john2,john3,avgJohn,avgMike,avgMary;
+
+mike1 = 116;
+mike2 =94;
+mike3 = 123;
+
+john1 = 89;
+john2 = 120;
+john3 = 103;
+
+avgJohn = (john1 + john2 + john3) / 3;
+console.log(avgJohn);
+avgMike = (mike1 + mike2 + mike3) / 3;
+console.log(avgMike);
+avgMary = (120 + 100 + 75) / 3;
+
+if(avgJohn > avgMike && avgMary){
+    console.log('John is the winner with average score ' + avgJohn);
+}
+else if(avgJohn && avgMary < avgMike ){
+    console.log('Mike is the winner with average score ' + avgMike);
+}
+else{
+    console.log('Mary is the winner ');
+}
